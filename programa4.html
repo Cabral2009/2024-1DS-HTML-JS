@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adivinha número</title>
+</head>
+<body>
+    <script>
+    function pulaLinha(){
+        document.write('<br><br>')
+    }
+
+    function mostra(texto){
+        document.write(texto)
+        pulaLinha()
+    }
+
+    // escolha o número 
+     
+    let númeroSecreto = 5;
+
+    let chute = prompt('Qual o número secreto entre 0 e 10?')
+
+    mostra(númeroSecreto == chute ? 'Vocẽ acertou': 'Você errou')
+
+     // 2°formal de fazer
+
+   // if(númeroSecreto == chute){
+   //     mostra('Você acertou')
+   // }else {
+   //     mostra('Você errou')
+   // }
+
+     //3° forma de fazer
+
+   // if(númeroSecreto > chute){
+  //      mostra('Você errou')
+   // }else if(númeroSecreto < chute){
+ //       mostra('Você errou')
+  //  }else {
+    //    mostra('Você acertou')
+  //  }
+    </script>
+</body>
+</html>

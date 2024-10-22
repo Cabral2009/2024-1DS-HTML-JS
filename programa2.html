@@ -1,6 +1,48 @@
 <!DOCTYPE html>
-<html lang="UTF-8"
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA"
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora IMC</title>
 </head>
+<body>
+    <script>
+        function pulaLinha(){
+            document.write("<br><br>")
+        }
+        
+        function mostra(texto){
+            document.write(texto)
+            pulaLinha()
+        }
+
+        function calculadoraIMC(peso, altura){
+            return imc = peso/(altura*altura)
+
+        }
+
+        let nome = prompt("Qual seu nome?")
+        let alturaInformado = prompt("$(nome), qual sua altura?")
+        let pesoInformal = prompt("${nome}, qual seu peso?")
+
+        let imcCalculara = calculadoraIMC(pesoInformado, alturaInformado)
+
+        mostra(" ${nome}, seu imc é de ${imcCalculado}")
+
+        if(imcCalculado >25){
+            mostra("$(nome), o seu IMC está acima do ideal")
+        }else if(imcCalculado < 18){
+            mostra("$(nome), o seu IMC está abaixo do ideal")
+        }else{
+            mostra("$(nome), o seu IMC está ideal")
+        }
+
+
+
+
+
+
+    </script>
+</body>
+</html>
