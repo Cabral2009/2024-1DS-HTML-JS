@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton+SC&family=Itim&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --fonte-titul:"Anton SC", sans-serif;
+    --fonte-texto:"Anton SC", sans-serif;
+    --cor1: #10002bff;
+    --cor2: #240046ff;
+    --cor3: #3c096cff;
+    --cor4: #5a189aff;
+    --cor5: #7b2cbfff;
+    --cor6: #9d4eddff;
+    --cor7: #c77dffff;
+    --cor8: #e0aaffff;
+ }
+
+
+
+ body{
+    background-color: var(--cor5);
+    font-family: var(--fonte texto);
+ }
+ header, footer{
+    background-color: var(--cor1);
+    padding:2em;
+    color: var(--cor7);
+    text-align: center;
+    font-family: var(--fonte-título);
+    font-size:1.5em;
+ }
+ footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+ }
+ footer a{
+    text-decoration: nome;
+    color: var(--cor4)
+
+ }
